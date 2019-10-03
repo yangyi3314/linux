@@ -3,7 +3,6 @@
 int compar(const void *a,const void*b){
 	int *aa=(int *)a,*bb=(int *)b;
 	if(*aa>*bb)return 1;
-    else if(*aa<*bb)return -1;
 	else return 0;
 }
 void urand(int *a,int n){
@@ -34,4 +33,7 @@ void mysort(void *base,size_t len,size_t width,int (*Comp)(const void *,const vo
 			}
 		}
 	}
+}
+void syssort(void *base,size_t len,size_t width){
+	qsort(base,MAX,sizeof(int),compar);
 }
