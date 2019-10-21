@@ -1,5 +1,4 @@
 #include "head.h"
-
 int compar(const void *a,const void*b){
 	int *aa=(int *)a,*bb=(int *)b;
 	if(*aa>*bb)return 1;
