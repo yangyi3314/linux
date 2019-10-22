@@ -1,4 +1,4 @@
-#include "/home/yangyi/Desktop/homework/weeks-six/code1/head.h"
+#include "/home/yangyi/Desktop/linuxprogram/weeks-six/staticlib/code/head.h"
 int main(){
 	int a[MAX];
 	urand(a,MAX);
