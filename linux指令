@@ -1,0 +1,25 @@
+git add .                   cat 源文件 查看文件
+git commit -m " "
+git push origin 分支名
+git init
+git init 文件夹
+git status 查看状态
+git log 查看历史
+创建文件：pluma 1.txt  mkdir 
+创建分支：git branch 名称
+进入分支：git checkout 名称
+查看分支：git branch 
+删除分支：git branch -d 名称
+合并分支（加进来）：git merge 名称
+git branch -r 查看远程分支
+
+git remote add origin git@github.com:yangyi3314/linux.git
+git clone git@github.com:yangyi3314/linux.git
+git pull origin获取远程最新版本到本地
+rm -rf 删除文件夹
+gcc -o 可执行文件  源文件 -l/路径
+静态库：1.g++ -c fun.c main.c ||ar -rc libtest.a fun.o 			 main.o||g++ -o main1 main.c  -L. -ltest
+		2.g++ -o main2 main.c -L/home/yangyi/Desktop/linuxprogram/weeks-six/staticlib/code -ltest
+动态库：1.gcc -fpic -shared -o libdynamiclib.so main.c fun.c||gcc main.c ./libdynamiclib.so -o main
+		2. gcc -rdynamic -o main1 main1.c -ldl
+
