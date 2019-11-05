@@ -1,6 +1,6 @@
 #include"alterpower.h"
 void alterpower()
-{//用argc记录命令行参数的个数，字符二维指针记录命令行字符串
+{
     int mode;
     int mode_u;//所有者权限
     int mode_g;//所属组权限
