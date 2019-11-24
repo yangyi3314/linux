@@ -19,7 +19,7 @@ int main()
     {
         printf("%d:parent is waiting zombie now\n",getpid());
         sleep(10);
-        printf("%d:parent is exiting now!\n");
+        printf("%d:parent is exiting now!\n",getpid());
     }
     exit(0);
 }
