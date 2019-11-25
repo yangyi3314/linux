@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>网业设计软件列表</title>
+<style>
+* {
+    list-style: none;
+    outline: none;
+}
+body {
+    font-family: "微软雅黑";
+    text-align: center;
+}
+a {
+    text-indent: 1em;
+    display: inline-block;
+    font-size: 22px;
+    color: #5E2D00;
+}
+a:nth-child(1) {
+    text-indent: 0;
+} /* 设置第一个链接的首行缩进为0 */
+a:link, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #f03;
+}
+dl {
+    display: none;
+}
+dd {
+    line-height: 38px;
+    font-size: 22px;
+    font-family: "微软雅黑";
+    color: #333;
+}
+dd:before {
+    content: url(images/11.png);
+} /* 添加小图片 */
+dd:nth-child(odd) {
+    color: #BDA793;
+}
+dd:nth-child(2) em {
+    color: #f03;
+    font-weight: bold;
+    font-style: normal;
+}
+dd:nth-child(3) em {
+    color: #5E2D00;
+    font-weight: bold;
+    font-style: normal;
+}
+:target {
+    display: block;
+}/* 链接到的内容部分显示 */
+</style>
+</head>
+<body>
+<h2>手机公司列表(点击查看)</h2>
+<hr size="3" color="#5E2D00"  width="750px">
+<nav> <a href="#news1" class="one">小米手机</a> <a href="#news2" class="two">华为手机</a> <a href="#news3" class="two">三星手机</a> <a href="#news4" class="two">苹果手机</a> </nav>
+<hr size="3" color="#5E2D00"  width="750px">
+<dl id="news1">
+    <dt><img  width="600" height="300" src="image/mi.jpg"></dt>
+    <dd>小米已经建成了全球最大消费类IoT物联网平台，连接超过<em>1亿台</em>智能设备。</dd>
+    <dd>小米有限责任公司是一家专注于<em>智能硬件和电子产品研发</em>的移动互联网公司</dd>
+    <dd>小米覆盖<em>智能硬件、生活消费用品、教育、游戏、社交网络、文化娱乐</em>等领域</dd>
+    <dd><em>“为发烧而生”</em>是小米的产品概念。<em>“让每个人都能享受科技的乐趣”</em>是小米的愿景。</dd>
+</dl>
+<dl id="news2">
+    <dt><img width="600" height="300" src="image/hw.jpg"></dt>
+    <dd>华为技术有限公司是一家生产销售通信设备的<em>民营通信</em>科技公司</dd>
+    <dd>华为是全球领先的信息与通信技术（ICT）解决方案供应商，专注于ICT领域，</dd>
+    <dd>截至2016年底，华为有17万多名员工，华为的产品和解决方案已经应用于全球170多个国家.</dd>
+    <dd> 2019年8月22日，2019中国民营企业500强发布，华为投资控股有限公司以7212亿营收排名第一。</dd>
+</dl>
+<dl id="news3">
+    <dt><img  width="600" height="300" src="image/sx.jpg"></dt>
+    <dd>三星集团成立于1938年，由李秉喆创办。三星集团是家族企业，李氏家族世袭.</dd>
+    <dd>三星集团是韩国最大的跨国企业集团，“全球企业品牌价值百强排行榜”19位</dd>
+    <dd>2018年二季度三星手机发货量为800万部，市场份额为23%，排名第二，仅次于小米。</dd>
+    <dd>2016年11月4日，三星电子美国公司宣布，将主动召回280万台特定型号的顶部开盖洗衣机。</dd>
+</dl>
+<dl id="news4">
+    <dt><img  width="600" height="300" src="image/apple.jpg"></dt>
+    <dd>苹果公司（Apple Inc. ）是美国一家高科技公司。于1976年4月1日创立，</dd>
+    <dd>苹果公司1980年12月12日公开招股上市，2012年创下6235亿美元的市值记录。</dd>
+    <dd>2018年8月2日晚间，苹果盘中市值首次超过1万亿美元，股价刷新历史最高位至203.57美元。、</dd>
+    <dd>2016苹果发布会在比尔·格雷厄姆市政礼堂举行，苹果成为2016年全球100大最有价值品牌第一名。</dd>
+</dl>
+</body>
+</html>
