@@ -50,6 +50,22 @@ int main()
             ret=write(fd[1],c,sizeof(c));
             fprintf("[child] pid=%d write %d bytes to pipe.\n",getpid(),ret)
         }
+        exit(0);
     }
-    
+    close(fd[1]);
+    sleep(2);
+    int fd1=open("./test.text",O_WRONLY|O_CREAT|O_TRUNC,0644));
+    char buf[1024*4]={0}
+    int n=1;
+    while(1)
+    {
+        ret=read(fd[0],buf,sizeof(buf));
+        if(ret==0)
+        {
+            break;
+        }
+        printf("n=%02d pid= %d read %d bytes from pipe buf[4095]=%c\n",n++,getpid(),ret,buf[4095]);
+        write(fd1,buf,ret);
+    }
+    return 0;
 }
