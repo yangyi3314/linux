@@ -7,7 +7,6 @@ int main()
 {
   int ret;
   pthread_t tid[2];
-  
   ret=pthread_create(&tid[0],NULL,worker1,NULL);
   if(ret!=0)
     {
@@ -58,8 +57,6 @@ void* worker2(void* arg)
         {
             usleep(1000);
             printf("thread 2 sell ticket: %d\n",c--);
-            
-
         }
         else
         {
